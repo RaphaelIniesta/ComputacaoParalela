@@ -6,4 +6,4 @@ Os dois exercícios possuem duas versões: **V1** e **V2** sendo V1 a versão ut
 
 As duas versões estão presentes na pasta do laboratório
 
-![alt text](https://github.com/RaphaelIniesta/ComputacaoParalela/blob/main/Gráfico Tempo de Execução.png?raw=true)
+![alt text](https://github.com/RaphaelIniesta/ComputacaoParalela/blob/main//Gráfico Tempo de Execução.png?raw=true)
