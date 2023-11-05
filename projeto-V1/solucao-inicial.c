@@ -11,7 +11,7 @@ double factorial(int n) {
 
 double calcular(unsigned long long max) {
     double sum = 0.0;
-    #pragma omp parallel for reduction(+:sum)
+    # pragma omp parallel for reduction(+:sum)
     for(int n = 0; n < max; n++) {
         sum += 1.0 / factorial(n);
     }
