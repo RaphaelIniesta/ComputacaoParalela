@@ -34,7 +34,7 @@ Tempo serial: 1.082
 Tempo paralelo: 0.404
 
 $$
-S = \frac{Tempo serial}{Tempo paralelo}
+S = \frac{Tempo \ serial}{Tempo \ paralelo}
 $$
 
 $$
