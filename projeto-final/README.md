@@ -25,3 +25,24 @@ Com o código compilado, basta executá-lo da seguinte forma:
 
 O tempo de execução do código varia dependendo da máquina em que estiver rodando.
 
+
+# Speedup:
+
+O teste foi feito utilizando o máximo fatorial de 1000
+
+Tempo serial: 1.082
+Tempo paralelo: 0.404
+
+$$
+S = \frac{Tempo serial}{Tempo paralelo}
+$$
+
+$$
+S = \frac{1.082}{0.040}
+$$
+
+$$
+S = 2,678
+$$
+
+O speedup da versão serial para a versão paralela foi de 2,678
