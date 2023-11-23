@@ -31,18 +31,24 @@ void calcular(unsigned long long max, mpf_t result) {
     }
 }
 
-int main() {
-    unsigned long long max;
+int main(int argc, char *argv[]) {
+    if(argc != 2) {
+        printf("Uso: %s <max>\n", argv[0]);
+        return 1;
+    }
+
+    unsigned long long max = strtoull(argv[1], NULL, 10);
+    mpf_set_default_prec(999999);
 
     mpf_t euler;
     mpf_init(euler);
 
-    printf("Número máximo de n: ");
-    scanf("%ulld", &max);
+//    printf("Número máximo de n: ");
+//    scanf("%ulld", &max);
 
     calcular(max, euler);
 
-    gmp_printf("Aproximação de eˆ1 até o termo %llu é: \n %.100Ff\n", max, euler);
+    gmp_printf("Aproximação de eˆ1 até o termo %llu é: \n %.10000Ff\n", max, euler);
     mpf_clear(euler);
 
     return 0;
